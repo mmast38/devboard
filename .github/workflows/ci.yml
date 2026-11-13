@@ -27,7 +27,7 @@ jobs:
           prettier: true
      
   build-and-push: 
-   needs: code-lint
+   needs: [code-lint]
    runs-on: ubuntu-latest
    steps:
      - name: Checkout code
